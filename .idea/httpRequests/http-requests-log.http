@@ -1,0 +1,545 @@
+GET http://localhost:3000/cargoAll/John
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-24T103357.200.json
+
+###
+
+DELETE http://localhost:3000/cargo/5bcf901102b1932df4b857b4/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Jb","price":50,"amount":99,"providerID":"5bc9060f5a6760bc51a7f99f","providerName":"John","providerType":"admin"}
+
+<> 2018-10-23T101832.200.json
+
+###
+
+DELETE http://localhost:3000/cargo/5bcf901102b1932df4b857b4/Sam
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Jb","price":50,"amount":99,"providerID":"5bc9060f5a6760bc51a7f99f","providerName":"John","providerType":"admin"}
+
+<> 2018-10-23T101825.200.json
+
+###
+
+DELETE http://localhost:3000/cargo/Sam
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Jb","price":50,"amount":99,"providerID":"5bc9060f5a6760bc51a7f99f","providerName":"John","providerType":"admin"}
+
+<> 2018-10-23T101819.404.html
+
+###
+
+POST http://localhost:3000/cargo/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Jb","price":50,"amount":99,"providerID":"5bc9060f5a6760bc51a7f99f","providerName":"John","providerType":"admin"}
+
+<> 2018-10-23T101809.200.json
+
+###
+
+DELETE http://localhost:3000/cargo/5bcf8fcf02b1932df4b857b3/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Jb","price":50,"amount":99,"providerID":"5bc9060f5a6760bc51a7f99f","providerName":"John","providerType":"admin"}
+
+<> 2018-10-23T101755.200.json
+
+###
+
+GET http://localhost:3000/cargoAll/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Jb","price":50,"amount":99,"providerID":"5bc9060f5a6760bc51a7f99f","providerName":"John","providerType":"admin"}
+
+<> 2018-10-23T101728.200.json
+
+###
+
+POST http://localhost:3000/cargo/Sam
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Jb","price":50,"amount":99,"providerID":"5bc9060f5a6760bc51a7f99f","providerName":"John","providerType":"admin"}
+
+<> 2018-10-23T101716.200.json
+
+###
+
+POST http://localhost:3000/cargo/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"Jb","price":50,"amount":99,"providerID":"5bc9060f5a6760bc51a7f99f","providerName":"John","providerType":"admin"}
+
+<> 2018-10-23T101704.200.json
+
+###
+
+GET http://localhost:3000/cargoAll/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-23T090251.200.json
+
+###
+
+GET http://localhost:3000/cargoAll
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-23T090248.404.html
+
+###
+
+GET http://localhost:3000/cargoTotalCostByName/beef
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-23T082801.200.json
+
+###
+
+GET http://localhost:3000/cargoCostByName/beef
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-23T082755.404.html
+
+###
+
+GET http://localhost:3000/cargoAll/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-23T051115.200.json
+
+###
+
+GET http://localhost:3000/cargoAll
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-23T051112.404.html
+
+###
+
+GET http://localhost:3000/cargoContains/beef/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-23T045921.200.json
+
+###
+
+GET http://localhost:3000/cargoCompany/5bc907cd5a6760bc51a7f9a8
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-23T044405.200.json
+
+###
+
+GET http://localhost:3000/cargoAll/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-23T044357.200.json
+
+###
+
+GET http://localhost:3000/cargoCompany
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-23T044341.404.html
+
+###
+
+GET http://localhost:3000/cargoAll/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-23T041846.200.json
+
+###
+
+GET http://localhost:3000/cargoId/5bc908e35a6760bc51a7f9ab/Bob
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-22T103906.200.json
+
+###
+
+GET http://localhost:3000/cargoId/5bc908e35a6760bc51a7f9ab/Bob
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-22T103827.200.json
+
+###
+
+GET http://localhost:3000/cargoId/5bc908e35a6760bc51a7f9ab/Bob
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-22T103725.200.json
+
+###
+
+GET http://localhost:3000/cargoId/5bc908e35a6760bc51a7f9ab/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-22T103719.200.json
+
+###
+
+GET http://localhost:3000/cargoId/5bc908e35a6760bc51a7f9ab/Sam
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-22T103710.200.json
+
+###
+
+GET http://localhost:3000/cargoId/5bc908e35a6760bc51a7f9ab/Sam
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-22T103607.200.json
+
+###
+
+GET http://localhost:3000/cargoId/5bc908e35a6760bc51a7f9ab/Sam
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-22T103454.200.json
+
+###
+
+GET http://localhost:3000/cargoId/5bc908e35a6760bc51a7f9ab/Sam
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-22T103422.200.json
+
+###
+
+GET http://localhost:3000/cargoAll/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-22T103405.200.json
+
+###
+
+GET http://localhost:3000/cargoId/5bc907cd5a6760bc51a7f9a8/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-22T103355.200.json
+
+###
+
+GET http://localhost:3000/cargoId/5bc907cd5a6760bc51a7f9a8/Sam
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-22T103350.200.json
+
+###
+
+GET http://localhost:3000/cargoId/5bc907cd5a6760bc51a7f9a8/Sam
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-22T102659.200.json
+
+###
+
+GET http://localhost:3000/cargoId/5bc907cd5a6760bc51a7f9a8/Sam
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-22T102626.200.json
+
+###
+
+GET http://localhost:3000/cargoId/5bc907cd5a6760bc51a7f9a8/Sam
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+###
+
+GET http://localhost:3000/cargoId/5bc907cd5a6760bc51a7f9a8/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-22T102558.200.json
+
+###
+
+GET http://localhost:3000/cargoAll/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-22T102532.200.json
+
+###
+
+GET http://localhost:3000/cargoAll/Bob
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-22T102528.200.json
+
+###
+
+GET http://localhost:3000/cargoAll/Sam
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-22T102524.200.json
+
+###
+
+GET http://localhost:3000/cargoAll/Tony
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-22T102522.200.json
+
+###
+
+GET http://localhost:3000/cargoAll/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-22T102516.200.json
+
+###
+
+GET http://localhost:3000/cargoAll/Sam
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-22T102513.200.json
+
+###
+
+GET http://localhost:3000/cargoAll/Sam
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-22T101948-1.200.json
+
+###
+
+GET http://localhost:3000/cargoAll/Sam
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-22T101948.200.json
+
+###
+
+GET http://localhost:3000/cargoAll/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-22T101945.200.json
+
+###
+
+GET http://localhost:3000/cargoAll/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-22T101020.200.json
+
+###
+
+PUT http://localhost:3000/cargoCertainPrice/5bc907cd5a6760bc51a7f9a8/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-22T101012.200.json
+
+###
+
+PUT http://localhost:3000/cargoCertainPrice/5bc907cd5a6760bc51a7f9a8/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":99}
+
+<> 2018-10-22T100910.404.html
+
+###
+
+GET http://localhost:3000/cargoAll/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":666}
+
+<> 2018-10-22T100834.200.json
+
+###
+
+PUT http://localhost:3000/cargoPriceChange/beef/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":666}
+
+<> 2018-10-22T100825.200.json
+
+###
+
+PUT http://localhost:3000/cargoCertainPrice/5bc907cd5a6760bc51a7f9a8/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":666}
+
+<> 2018-10-22T100749.404.html
+
+###
+
