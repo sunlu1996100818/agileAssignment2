@@ -38,12 +38,21 @@ describe('cargo', function (){
                     done();
                 });
         });
-        it('should return massage of authentication', function(done) {
+        it('should return massage of authentication not enough', function(done) {
             chai.request(server)
                 .get('/cargoAll/Sam')
                 .end(function(err, res) {
                     expect(res).to.have.status(200);
                     expect(res.body).to.equal('your authority is not Enough! You cant see all cargos!') ;
+                    done();
+                });
+        });
+        it('should return massage of wrong provider name', function(done) {
+            chai.request(server)
+                .get('/cargoAll/aaa')
+                .end(function(err, res) {
+                    expect(res).to.equal(undefined) ;
+                    //expect(res.body).to.equal("Invalid providerName!") ;
                     done();
                 });
         });
@@ -85,10 +94,65 @@ describe('cargo', function (){
                     done();
                 });
         });
+        it('should return massage of wrong provider name', function(done) {
+            chai.request(server)
+                .get('/cargoName/beef/aaa')
+                .end(function(err, res) {
+                    expect(res.body).to.equal("Invalid providerName!") ;
+                    done();
+                });
+        });
 
     });
 
-    
+    //Fuzzy search:
+    describe('GET /cargoContains/:name/:providerName',  () => {
+        it('should return all cargo contain certain names if has authentication', function(done) {
+            chai.request(server)
+                .get('/cargoContains/beef/John')
+                .end(function(err, res) {
+                    expect(res).to.have.status(200);
+                    let result = _.map(res.body, (cargo) => {
+                        return { id: cargo._id,name:cargo.name,
+                            providerID: cargo.providerID }
+                    });
+
+                    expect(result).to.include( { id: "5bc908e35a6760bc51a7f9ab", name:'beef',providerID: "5bc9066a5a6760bc51a7f9a2"  } );
+                    expect(result).to.include( { id: "5bc9091a5a6760bc51a7f9ac", name:'beef-tongue',providerID: "5bc906805a6760bc51a7f9a3"  } );
+
+                    done();
+
+
+                });
+        });
+        it('should return massage of authentication not enough', function(done) {
+            chai.request(server)
+                .get('/cargoContains/beef/Sam')
+                .end(function(err, res) {
+                    expect(res).to.have.status(200);
+                    expect(res.body).to.equal("your authority is not enough! cant find this!") ;
+                    done();
+                });
+        });
+        it('should return massage of invalid name', function(done) {
+            chai.request(server)
+                .get('/cargoContains/aaa/John')
+                .end(function(err, res) {
+                    expect(res).to.equal(undefined) ;
+                    done();
+                });
+        });
+        it('should return massage of wrong provider name', function(done) {
+            chai.request(server)
+                .get('/cargoContains/beef/aaa')
+                .end(function(err, res) {
+                    //expect(res).to.equal(undefined) ;
+
+                    done();
+                });
+        });
+
+    });
 
 
 

@@ -185,7 +185,7 @@ router.containNames = (req, res) =>{
         }
         else {
             //res.send(JSON.stringify(cargos111,null,5));
-            res.json("your authority is not enough! cant find all cargos!");
+            res.json("your authority is not enough! cant find this!");
         };
     });
 

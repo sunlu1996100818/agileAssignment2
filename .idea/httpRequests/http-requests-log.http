@@ -1,3 +1,14 @@
+GET http://localhost:3000/cargoName/aaa/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"price":899}
+
+<> 2018-10-30T074253.200.json
+
+###
+
 GET http://localhost:3000/provider/providerALL
 Accept: */*
 Cache-Control: no-cache
@@ -468,17 +479,6 @@ Content-Type: application/json
 {"name":"John","cargoProvide":"chicken-wings","company":"chicken King","providerReputation":5}
 
 <> 2018-10-24T093348.200.json
-
-###
-
-POST http://localhost:3000/provider/
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name":"John","cargoProvide":"chicken-wings","company":"chicken King","providerReputation":5}
-
-<> 2018-10-24T093331.200.json
 
 ###
 
