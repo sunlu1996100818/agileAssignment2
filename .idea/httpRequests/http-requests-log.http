@@ -1,3 +1,21 @@
+GET http://localhost:3000/cargoCertainCost/5bc908665a6760bc51a7f9a9
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-30T084517.200.json
+
+###
+
+GET http://localhost:3000/cargoAll/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-30T084411.200.json
+
+###
+
 GET http://localhost:3000/cargoTotalCostByName/chicken
 Accept: */*
 Cache-Control: no-cache
@@ -453,28 +471,6 @@ Content-Type: application/json
 {"paymenttype":"PayPal", "amount" :1101 ,"upvotes":0 }
 
 <> 2018-10-25T125513.200.json
-
-###
-
-GET http://localhost:3000/cargoAll/John
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"paymenttype":"PayPal", "amount" :1101 ,"upvotes":0 }
-
-<> 2018-10-25T125504.200.json
-
-###
-
-GET http://localhost:3000/CargoAll/John
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"paymenttype":"PayPal", "amount" :1101 ,"upvotes":0 }
-
-<> 2018-10-25T125434.200.json
 
 ###
 

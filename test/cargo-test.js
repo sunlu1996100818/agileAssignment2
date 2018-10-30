@@ -185,7 +185,7 @@ describe('cargo', function (){
 
     //get one kind of cargo total cost
     describe('GET /cargoTotalCostByName/:name',  () => {
-        it('should return massage of invalid id', function(done) {
+        it('should return one kind of cargo total cost if invalid name', function(done) {
             chai.request(server)
                 .get('/cargoTotalCostByName/chicken')
                 .end(function(err, res) {
@@ -203,6 +203,33 @@ describe('cargo', function (){
 
                     //expect(Error);
                     expect(res.body).to.equal('Invalid name!') ;
+                    done();
+                });
+        });
+
+
+    });
+    //get one certain cargo total cost
+    describe('GET /cargoCertainCost/:id',  () => {
+        it('should return a certain cargo cost of invalid id', function(done) {
+            chai.request(server)
+                .get('/cargoCertainCost/5bc908665a6760bc51a7f9a9')
+                .end(function(err, res) {
+                    expect(res).to.have.status(200);
+                    expect(res.body).to.include({'certainCost':4000}) ;
+                    done();
+                });
+        });
+
+
+        it('should return massage of invalid name', function(done) {
+            chai.request(server)
+                .get('/cargoCertainCost/asdasf')
+                .end(function(err, res) {
+
+                    //expect(Error);
+                    expect(res.body).to.have.property( 'message', 'Error!') ;
+                    //expect(res.body).to.have.property('message','Donation Successfully Deleted!');
                     done();
                 });
         });
