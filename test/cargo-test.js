@@ -321,5 +321,92 @@ describe('cargo', function (){
 
     });
 
+    //put function test
+    describe('PUT /cargoCertainPrice/:id/providerName', () => {
+        it('should return a message and the cargo price successfully changed', function(done) {
+
+            chai.request(server)
+                .put('/cargoCertainPrice/5bc907cd5a6760bc51a7f9a8/John')
+                .end(function(err, res) {
+                    expect(res).to.have.status(200);
+                    let cargo = res.body ;
+                    expect(cargo).to.equal( 'your change request is successful, please check' );
+                    done();
+                });
+        });
+        it('should return a 404 and a message for invalid cargo id', function(done) {
+            chai.request(server)
+                .put('/cargoCertainPrice/12345/John')
+                .end(function(err, res) {
+                    expect(res).to.have.status(200);
+                    expect(res.body).to.equal('cargo NOT Found - cant change the price' ) ;
+                    done();
+                });
+        });
+        it('should return massage of authentication not enough', function(done) {
+            chai.request(server)
+                .put('/cargoCertainPrice/5bc907cd5a6760bc51a7f9a8/Sam')
+                .end(function(err, res) {
+                    expect(res).to.have.status(200);
+                    expect(res.body).to.equal("your authority is not Enough! You cant change any Price!") ;
+                    done();
+                });
+        });
+    });
+
+    describe('PUT /cargoPriceChange/:id/providerName', () => {
+        it('should return a message and the cargo price successfully changed', function(done) {
+
+            chai.request(server)
+                .put('/cargoPriceChange/beef/John')
+                .end(function(err, res) {
+                    expect(res).to.have.status(200);
+                    let cargo = res.body ;
+                    expect(cargo).to.equal( 'your change request is successful, please check' );
+                    done();
+                });
+        });
+        it('should return a message for invalid cargo id', function(done) {
+            chai.request(server)
+                .put('/cargoPriceChange/basdf/John')
+                .end(function(err, res) {
+                    expect(res).to.have.status(200);
+                    expect(res.body).to.equal('your change request is successful, please check' ) ;
+                    done();
+                });
+        });
+        it('should return massage of authentication not enough', function(done) {
+            chai.request(server)
+                .put('/cargoPriceChange/beef/Sam')
+                .end(function(err, res) {
+                    expect(res).to.have.status(200);
+                    expect(res.body).to.equal("your authority is not Enough! You cant change any Price!") ;
+                    done();
+                });
+        });
+    });
+
+    describe('PUT /cargoCertainAmount/:id/providerName', () => {
+        it('should return a message and the cargo price successfully changed', function(done) {
+
+            chai.request(server)
+                .put('/cargoCertainAmount/5bc907cd5a6760bc51a7f9a8/John')
+                .end(function(err, res) {
+                    expect(res).to.have.status(200);
+                    let cargo = res.body ;
+                    expect(cargo).to.equal(  'your change request is successful, please check');
+                    done();
+                });
+        });
+        it('should return message for invalid cargo id', function(done) {
+            chai.request(server)
+                .put('/cargoCertainAmount/12345/John')
+                .end(function(err, res) {
+                    expect(res).to.have.status(200);
+                    expect(res.body).to.equal('cargo NOT Found - cant change the amount' ) ;
+                    done();
+                });
+        });
+    });
 
 });
