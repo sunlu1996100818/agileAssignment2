@@ -334,7 +334,7 @@ describe('cargo', function (){
                     done();
                 });
         });
-        it('should return a 404 and a message for invalid cargo id', function(done) {
+        it('should return a message for invalid cargo id', function(done) {
             chai.request(server)
                 .put('/cargoCertainPrice/12345/John')
                 .end(function(err, res) {
@@ -354,6 +354,7 @@ describe('cargo', function (){
         });
     });
 
+    //change one kind of price
     describe('PUT /cargoPriceChange/:id/providerName', () => {
         it('should return a message and the cargo price successfully changed', function(done) {
 
@@ -386,27 +387,5 @@ describe('cargo', function (){
         });
     });
 
-    describe('PUT /cargoCertainAmount/:id/providerName', () => {
-        it('should return a message and the cargo price successfully changed', function(done) {
-
-            chai.request(server)
-                .put('/cargoCertainAmount/5bc907cd5a6760bc51a7f9a8/John')
-                .end(function(err, res) {
-                    expect(res).to.have.status(200);
-                    let cargo = res.body ;
-                    expect(cargo).to.equal(  'your change request is successful, please check');
-                    done();
-                });
-        });
-        it('should return message for invalid cargo id', function(done) {
-            chai.request(server)
-                .put('/cargoCertainAmount/12345/John')
-                .end(function(err, res) {
-                    expect(res).to.have.status(200);
-                    expect(res.body).to.equal('cargo NOT Found - cant change the amount' ) ;
-                    done();
-                });
-        });
-    });
 
 });
