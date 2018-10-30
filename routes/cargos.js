@@ -100,7 +100,7 @@ router.searchCompanyReputationByCargoId =(req,res) => {
     Cargo1.findCargoCompanyByCargoId(cargoID,function (err, cargo) {
         if(err){
             res.json("invalid ID!  Please reconnect to the Database!");
-            res.send(err);
+            //res.send(err);
 
         }
         else if(cargo.length<=0){
@@ -165,7 +165,7 @@ router.containNames = (req, res) =>{
             res.send(err);
         }
         else if(cargo.length<=0){
-            res.send("invalid name! ")
+            res.json("invalid name! ");
         }
         else{
             //res.send(JSON.stringify(cargo,null,5));

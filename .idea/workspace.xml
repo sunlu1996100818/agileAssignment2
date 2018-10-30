@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="582142ab-23be-49ed-b05b-431e023ed7ae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-24T093331.200.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/cargos.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/cargos.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/cargo-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/cargo-test.js" afterDir="false" />
     </list>
@@ -107,12 +106,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="1286" />
+          <entry key="js" value="1661" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="1286" />
+          <entry key="JavaScript" value="1661" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -132,8 +131,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/cargos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3520">
-              <caret line="180" column="48" lean-forward="true" selection-start-line="180" selection-start-column="26" selection-end-line="180" selection-end-column="48" />
+            <state relative-caret-position="242">
+              <caret line="106" column="47" selection-start-line="106" selection-start-column="37" selection-end-line="106" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -141,7 +140,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/provider.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2376">
+            <state relative-caret-position="537">
               <caret line="108" column="18" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="18" />
             </state>
           </provider>
@@ -155,7 +154,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Models/provider.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="-211">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -175,8 +174,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/cargo-test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+            <state relative-caret-position="229">
+              <caret line="142" column="33" selection-start-line="142" selection-start-column="33" selection-end-line="142" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -1622,12 +1621,12 @@
       <workItem from="1540406994608" duration="189000" />
       <workItem from="1540477168314" duration="1691000" />
       <workItem from="1540479523304" duration="790000" />
-      <workItem from="1540926341008" duration="3037000" />
+      <workItem from="1540926341008" duration="4504000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36500000" />
+    <option name="totallyTimeSpent" value="37967000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1699,25 +1698,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/donations.js" />
-    <entry file="file://$PROJECT_DIR$/routes/provider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2376">
-          <caret line="108" column="18" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Models/provider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Models/cargos.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -1725,17 +1705,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Models/cargos.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/provider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-211">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/provider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="108" column="18" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/cargos.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3520">
-          <caret line="180" column="48" lean-forward="true" selection-start-line="180" selection-start-column="26" selection-end-line="180" selection-end-column="48" />
+        <state relative-caret-position="242">
+          <caret line="106" column="47" selection-start-line="106" selection-start-column="37" selection-end-line="106" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/cargo-test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+        <state relative-caret-position="229">
+          <caret line="142" column="33" selection-start-line="142" selection-start-column="33" selection-end-line="142" selection-end-column="33" />
         </state>
       </provider>
     </entry>

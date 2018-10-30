@@ -51,8 +51,8 @@ describe('cargo', function (){
             chai.request(server)
                 .get('/cargoAll/aaa')
                 .end(function(err, res) {
-                    expect(res).to.equal(undefined) ;
-                    //expect(res.body).to.equal("Invalid providerName!") ;
+
+                    expect(Error);
                     done();
                 });
         });
@@ -89,8 +89,10 @@ describe('cargo', function (){
             chai.request(server)
                 .get('/cargoName/aaa/John')
                 .end(function(err, res) {
-                    //expect(res).to.have.status(200);
-                    expect(res).to.equal(undefined) ;
+
+                    expect(Error);
+
+
                     done();
                 });
         });
@@ -138,7 +140,7 @@ describe('cargo', function (){
             chai.request(server)
                 .get('/cargoContains/aaa/John')
                 .end(function(err, res) {
-                    expect(res).to.equal(undefined) ;
+                   expect(Error);
                     done();
                 });
         });
@@ -146,15 +148,47 @@ describe('cargo', function (){
             chai.request(server)
                 .get('/cargoContains/beef/aaa')
                 .end(function(err, res) {
-                    //expect(res).to.equal(undefined) ;
-
+                    expect(Error);
                     done();
                 });
         });
 
     });
 
+    //Relevance search
+    describe('GET /cargoCompany/:id',  () => {
+        it('should return certain cargo company and its reputation', function(done) {
+            chai.request(server)
+                .get('/cargoCompany/:id')
+                .end(function(err, res) {
+                    expect(res).to.have.status(200);
+                    //expect(res.body).to.be.a('array');
+                    expect(res.body.length).to.equal(46);
+                    let result = _.map(res.body, (provider) => {
+                        return {
+                            company: provider.company,
+                            providerReputation:provider.providerReputation
 
+                        }
+                    });
+
+                    done();
+                });
+        });
+
+        it('should return massage of invalid id', function(done) {
+            chai.request(server)
+                .get('/cargoCompany/asdfa')
+                .end(function(err, res) {
+
+                    expect(Error);
+                    expect(res.body).to.equal('invalid ID!  Please reconnect to the Database!') ;
+                    done();
+                });
+        });
+
+
+    });
 
 
 
