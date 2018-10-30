@@ -270,4 +270,56 @@ describe('cargo', function (){
     });
 
 
+    describe('DELETE /cargo/:id', () => {
+        it('should return a message of Donation Successfully Deleted', function(done) {
+            chai.request(server)
+                .delete('/cargo/5bc907cd5a6760bc51a7f9a8/John')
+                .end((err,res) => {
+                    expect(res).to.have.status(200);
+                    expect(res.body).to.have.property('message','cargo Deleted successfully!');
+                    done();
+                });
+        });
+        after(function (done){
+            chai.request(server)
+                .get('/cargoAll/John')
+                .end(function(err,res){
+                    expect(res).to.have.status(200);
+                    expect(res.body).be.be.a('array');
+                    let result = _.map(res.body,function (cargo) {
+                        return{
+                            _id:cargo._id,
+                            name:cargo.name,
+                            price:cargo.price,
+                            amount:cargo.amount,
+                            providerID:cargo.providerID
+                        };
+                    });
+                    expect(result).to.not.include({_id:'5bc907cd5a6760bc51a7f9a8'});
+                    done();
+                })
+
+        })
+        it('should return a message of invalid id', function(done) {
+            chai.request(server)
+                .delete('/cargo/adfasdf/John')
+                .end((err,res) => {
+                    expect(res).to.have.status(200);
+                    expect(res.body).to.have.property('message','Cant find cargo, cargo NOT Deleted!');
+                    done();
+                });
+        });
+        it('should return massage of authentication', function(done) {
+            chai.request(server)
+                .delete('/cargo/5bc907cd5a6760bc51a7f9a8/Sam')
+                .end(function(err, res) {
+                    expect(res).to.have.status(200);
+                    expect(res.body).to.equal('your authority is not Enough! You cant delete the cargo!') ;
+                    done();
+                });
+        });
+
+    });
+
+
 });
