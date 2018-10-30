@@ -237,6 +237,37 @@ describe('cargo', function (){
 
     });
 
+    //post function test:
+    describe('POST /cargo/John', function () {
+        it('should return cargo added successfully', function(done) {
+            let cargo = {
+                name:"Tommy",
+                providerID:"5bc9060f5a6760bc51a7f99f"
+            };
+            chai.request(server)
+                .post('/cargo/John')
+                .send(cargo)
+                .end(function(err, res) {
+                    expect(res).to.have.status(200);
+
+                    done();
+                });
+        });
+        after(function  (done) {
+            chai.request(server)
+                .get('/cargoAll/John')
+                .end(function(err, res) {
+                    let result = _.map(res.body, (cargo) => {
+                        return { name: cargo.name,
+                            providerID: cargo.providerID };
+                    }  );
+
+                    expect(res.body).to.be.a('array');
+                    expect(res.body.length).to.equal(9);
+                    done();
+                });
+        });
+    });
 
 
 });
