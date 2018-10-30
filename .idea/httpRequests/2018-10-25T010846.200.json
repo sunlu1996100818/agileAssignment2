@@ -1,0 +1,13 @@
+{
+  "message": "Cargo Added Successfully!",
+  "data": {
+    "_id": "5bd1b24edbd5eb07cc7ab416",
+    "name": "chicken-wings",
+    "price": 55,
+    "amount": 50,
+    "providerID": "5bc9060f5a6760bc51a7f99f",
+    "providerName": "Sam",
+    "providerType": "user",
+    "__v": 0
+  }
+}

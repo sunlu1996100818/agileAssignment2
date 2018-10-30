@@ -25,43 +25,42 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-app.get('/cargoAll/:providerName', cargo.findAll);        //p
-app.get('/provider/providerAll', provider.findAll);       //p
+app.get('/cargoAll/:providerName', cargo.findAll);                                                        //p
+app.get('/provider/providerAll', provider.findAll);                                             //p
 
-app.get('/cargoCompany/:id',cargo.searchCompanyReputationByCargoId);  //p
-
-
-app.get('/cargoContains/:name/:providerName', cargo.containNames);    //p
-app.get('/providerCompanyContains/:company', provider.containNames);  //p
-
-app.get('/cargoName/:name/:providerName', cargo.findByName);          //p
-app.get('/cargoId/:id/:providerName', cargo.findById);                //p
-
-app.get('/providerName/:name', provider.findByName);                  //p
-app.get('/provider/:id', provider.findById);                          //p
-
-app.get('/cargoTotalCostByName/:name', cargo.totalCost);              //p
-app.get('/cargoCertainCost/:id', cargo.certainCost);                  //p
+app.get('/cargoCompany/:id',cargo.searchCompanyReputationByCargoId);                                        //p   relevance search
 
 
-app.post('/cargo/:providerName',cargo.addCargo);                                   //p
-app.post('/provider/',provider.addProvider);                          //p
+app.get('/cargoContains/:name/:providerName', cargo.containNames);                                          //p   Fuzzy search
+app.get('/providerCompanyContains/:company', provider.containNames);                            //p   Fuzzy Search
 
-app.put('/cargoPriceChange/:name/:providerName', cargo.changeCargoPrice);           //p
-app.put('/cargoCertainPrice/:id/:providerName', cargo.changeCertainPrice);          //p
+app.get('/cargoName/:name/:providerName', cargo.findByName);                                               //p
+app.get('/cargoId/:id/:providerName', cargo.findById);                                                      //p
 
+app.get('/providerName/:name', provider.findByName);                                            //p
+app.get('/provider/:id', provider.findById);                                                    //p
 
-//app.put('/cargoAmountChange/:name/:providerName', cargo.changeCargoAmount);         //p
-app.put('/cargoCertainAmount/:id/:providerName', cargo.changeCertainAmount);        //p
-
-app.put('/cargoCertainProvider/:id/:providerName', cargo.changeCertainProvider);
-
-app.put('/providerCompanyChange/:id',provider.changeCertainCompany);                //p
-app.put('/providerReputationChange/:id',provider.changeCertainReputation);          //p
+app.get('/cargoTotalCostByName/:name', cargo.totalCost);                                                    //p
+app.get('/cargoCertainCost/:id', cargo.certainCost);                                                          //p
 
 
-app.delete('/cargo/:id/:providerName', cargo.deleteCargoById);
-//app.delete('/provider/:id', cargo.deleteProviderById);
+app.post('/cargo/:providerName',cargo.addCargo);                                                //p
+app.post('/provider/',provider.addProvider);                                                    //p
+
+app.put('/cargoPriceChange/:name/:providerName', cargo.changeCargoPrice);                                   //p
+app.put('/cargoCertainPrice/:id/:providerName', cargo.changeCertainPrice);                                 //p
+
+
+//app.put('/cargoAmountChange/:name/:providerName', cargo.changeCargoAmount);
+app.put('/cargoCertainAmount/:id/:providerName', cargo.changeCertainAmount);                    //p
+
+
+app.put('/providerCompanyChange/:id',provider.changeCertainCompany);                          //p
+app.put('/providerReputationChange/:id',provider.changeCertainReputation);                    //p
+
+
+app.delete('/cargo/:id/:providerName', cargo.deleteCargoById);                                  //p
+app.delete('/provider/:id', provider.deleteProviderById);
 
 
 

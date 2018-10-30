@@ -1,0 +1,11 @@
+{
+  "message": "Provider Added Successfully!",
+  "data": {
+    "_id": "5bd0d71be6bec217aca89d50",
+    "name": "John",
+    "cargoProvide": "chicken-wings",
+    "company": "chicken King",
+    "providerReputation": 5,
+    "__v": 0
+  }
+}

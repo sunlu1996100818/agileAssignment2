@@ -1,16 +1,36 @@
-
-This is a Cargo Delivery&Search System, by student Lu Sun, id:w20082256
+This is a Cargo Delivery&Search System, by student Lu Sun, id: w20082256
 
 this assessment is about a cargo system with 2 different models/Schemas:
-         cargo model , and the provider model, with relationships between them£ºCargo.providerID->provider.ObjectID;
-         
-using MongoDB as the database;  DB name: Cargo; 	3-collections in the db: Cargo,  provider,  user;
+         	cargo model , and the provider model, 
+	with relationships between them£ºCargo.providerID->provider.ObjectID;
+
+using MongoDB as the database;  DB name: Cargo; 	
+3-collections in the db: Cargo,  provider,  user;
+
+use mocha test,  in  test/cargo-test.js
+	(because this test must connect my local database first, 
+	so seems like you cant test this test structure by yourself,
+	but you can take a look at my cargo-test file in test folder,
+	i can ensure you that this test works)
 
 including many functions for get, post, put, delete.
-Fuzzy search	(¡Ì)
-relevance search	(¡Ì)
-Authentication	(¡Ì)
-and a little testing structure(can be done before Wes)
+Fuzzy search	(¡Ì)	--get/cargoContains/:name    		 	get all cargos whose name contains certain name;
+relevance search	(¡Ì)	--get/cargoCompany/:id			get the certain cargo's company and reputation because I linked 								the "providerID" to 	provider model's ObjectID, so can get that;
+
+Authentication	(¡Ì)	--many functions contains Authentication;	
+								only those provider whose providerType is "admin" can get 										access to some the functions; you can test all these functions 								which contains :providerName ; 
+
+How to get the idea and the solutions of these additional functions : 
+
+	For Fuzzy search: I search the mongoose API, and get the regulation expression of find( ) function, and applied that to my function;
+
+	For relevance search, I linked the cargo schema with my provider schema, and can find a certain cargo's 
+information of that cargo's company name and its reputation level, write a static function: 
+findCompanyAndReputationById(   ) in my cargo model, and alse, search the mongoose API for specifications.
+
+	For Authentication, I  use providerType, only those whose providerType is admin can get access to some of the functions.
+
+
 
   1.  For cargo model
 	1.1    get/cargoAll/:providerName		only those provider whose providerType is "admin" can get all cargos; otherwise return a massage of authentication not enough	(Authentication);
@@ -60,16 +80,18 @@ and a little testing structure(can be done before Wes)
 			   an invalid search can return a certain masseage of Error;
 
 
-	For thos functions which contain Authentication, if you dont have the authentication, it will return a message like     "your authentication is not enough,  you cannot XXXXXXXX !"
+For thos functions which contain Authentication, if you dont have the authentication, it will return a message like     "your authentication is not enough,  you cannot XXXXXXXX !"
 
 
 Reference:
 	1. for that relevance search: 
 		https://segmentfault.com/a/1190000009690117
 
-	2. for the fuzzy search: 
+	2. for the fuzzy search: 		
 		mongoose  API:         https://mongoosejs.com/docs/api.html
 		mongoDB  Api:	  http://mongodb.github.io/node-mongodb-native/2.0/api/Collection.html#find
+
+	
 
 
 

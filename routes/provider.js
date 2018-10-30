@@ -53,6 +53,9 @@ router.findByName = (req, res) => {
         if (err){
             res.send('The cargo you asked to find is NOT EXIST!!');
         }
+        else if (provider.length<=0) {
+            res.send("Invalid name");
+        }
         else{
             res.send(JSON.stringify(provider,null,5));
         }
@@ -103,6 +106,7 @@ router.addProvider = (req, res) => {
             // return a suitable error message
             else{
 
+                //res.json({ message: 'Donation Added!'});
                 res.json({ message: 'Provider Added Successfully!',data:provider});
             }
             // return a suitable success message

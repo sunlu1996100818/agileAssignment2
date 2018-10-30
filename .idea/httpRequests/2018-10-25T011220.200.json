@@ -1,0 +1,93 @@
+[
+  {
+    "_id": "5bc907cd5a6760bc51a7f9a8",
+    "name": "beef",
+    "price": 899,
+    "amount": 500,
+    "providerID": "5bc9060f5a6760bc51a7f99f",
+    "providerName": "John",
+    "providerType": "admin"
+  },
+  {
+    "_id": "5bc908665a6760bc51a7f9a9",
+    "name": "chicken",
+    "price": 40,
+    "amount": 100,
+    "providerID": "5bc9062c5a6760bc51a7f9a0",
+    "providerName": "John",
+    "providerType": "admin"
+  },
+  {
+    "_id": "5bc908a65a6760bc51a7f9aa",
+    "name": "apple",
+    "price": 20,
+    "amount": 200,
+    "providerID": "5bc9064d5a6760bc51a7f9a1",
+    "providerName": "John",
+    "providerType": "admin"
+  },
+  {
+    "_id": "5bc908e35a6760bc51a7f9ab",
+    "name": "beef",
+    "price": 666,
+    "amount": 44,
+    "providerID": "5bc9066a5a6760bc51a7f9a2",
+    "providerName": "Sam",
+    "providerType": "user"
+  },
+  {
+    "_id": "5bc9091a5a6760bc51a7f9ac",
+    "name": "beef-tongue",
+    "price": 800,
+    "amount": 200,
+    "providerID": "5bc906805a6760bc51a7f9a3",
+    "providerName": "Sam",
+    "providerType": "user"
+  },
+  {
+    "_id": "5bc909615a6760bc51a7f9ad",
+    "name": "chicken",
+    "price": 450,
+    "amount": 150,
+    "providerID": "5bc906a35a6760bc51a7f9a4",
+    "providerName": "Sam",
+    "providerType": "user"
+  },
+  {
+    "_id": "5bc9098c5a6760bc51a7f9ae",
+    "name": "beef",
+    "price": 666,
+    "amount": 300,
+    "providerID": "5bc906bb5a6760bc51a7f9a5",
+    "providerName": "Bob",
+    "providerType": "user"
+  },
+  {
+    "_id": "5bc909b55a6760bc51a7f9af",
+    "name": "chicken-wings",
+    "price": 800,
+    "amount": 300,
+    "providerID": "5bc906d85a6760bc51a7f9a6",
+    "providerName": "Bob",
+    "providerType": "user"
+  },
+  {
+    "_id": "5bc909fa5a6760bc51a7f9b0",
+    "name": "fish",
+    "price": 900,
+    "amount": 250,
+    "providerID": "5bc906fc5a6760bc51a7f9a7",
+    "providerName": "Tony",
+    "providerType": "admin"
+  },
+  {
+    "_id": "5bd0c547db6de20f0cff568d",
+    "name": "chicken",
+    "price": 50,
+    "amount": 66,
+    "providerID": "5bc9060f5a6760bc51a7f99f",
+    "providerName": "John",
+    "providerType": "admin",
+    "__v": 0
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "_id": "5bc907cd5a6760bc51a7f9a8",
+    "name": "beef",
+    "price": 88,
+    "amount": 500,
+    "providerID": "5bc9060f5a6760bc51a7f99f",
+    "providerName": "John",
+    "providerType": "admin"
+  },
+  {
+    "_id": "5bc908e35a6760bc51a7f9ab",
+    "name": "beef",
+    "price": 999,
+    "amount": 44,
+    "providerID": "5bc9066a5a6760bc51a7f9a2",
+    "providerName": "Sam",
+    "providerType": "user"
+  },
+  {
+    "_id": "5bc9091a5a6760bc51a7f9ac",
+    "name": "beef-tongue",
+    "price": 800,
+    "amount": 200,
+    "providerID": "5bc906805a6760bc51a7f9a3",
+    "providerName": "Sam",
+    "providerType": "user"
+  },
+  {
+    "_id": "5bc9098c5a6760bc51a7f9ae",
+    "name": "beef",
+    "price": 999,
+    "amount": 300,
+    "providerID": "5bc906bb5a6760bc51a7f9a5",
+    "providerName": "Bob",
+    "providerType": "user"
+  }
+]
