@@ -136,14 +136,7 @@ describe('cargo', function (){
                     done();
                 });
         });
-        it('should return massage of invalid name', function(done) {
-            chai.request(server)
-                .get('/cargoContains/aaa/John')
-                .end(function(err, res) {
-                   expect(Error);
-                    done();
-                });
-        });
+
         it('should return massage of wrong provider name', function(done) {
             chai.request(server)
                 .get('/cargoContains/beef/aaa')
@@ -190,6 +183,32 @@ describe('cargo', function (){
 
     });
 
+    //get one kind of cargo total cost
+    describe('GET /cargoTotalCostByName/:name',  () => {
+        it('should return massage of invalid id', function(done) {
+            chai.request(server)
+                .get('/cargoTotalCostByName/chicken')
+                .end(function(err, res) {
+                    expect(res).to.have.status(200);
+                    expect(res.body).to.include({'totalCost':74800}) ;
+                    done();
+                });
+        });
+
+
+        it('should return massage of invalid name', function(done) {
+            chai.request(server)
+                .get('/cargoTotalCostByName/asdfa')
+                .end(function(err, res) {
+
+                    //expect(Error);
+                    expect(res.body).to.equal('Invalid name!') ;
+                    done();
+                });
+        });
+
+
+    });
 
 
 

@@ -1,3 +1,21 @@
+GET http://localhost:3000/cargoTotalCostByName/chicken
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-30T083048.200.json
+
+###
+
+GET http://localhost:3000/cargoTotalCostByName/chicken
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-30T082459.200.json
+
+###
+
 GET http://localhost:3000/cargoName/aaa/John
 Accept: */*
 Cache-Control: no-cache
@@ -457,28 +475,6 @@ Content-Type: application/json
 {"paymenttype":"PayPal", "amount" :1101 ,"upvotes":0 }
 
 <> 2018-10-25T125434.200.json
-
-###
-
-GET http://localhost:3000/provider/providerAll
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name":"John","cargoProvide":"chicken-wings","company":"chicken King","providerReputation":5}
-
-<> 2018-10-24T093357.200.json
-
-###
-
-DELETE http://localhost:3000/provider/5bd0d71be6bec217aca89d50
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name":"John","cargoProvide":"chicken-wings","company":"chicken King","providerReputation":5}
-
-<> 2018-10-24T093348.200.json
 
 ###
 

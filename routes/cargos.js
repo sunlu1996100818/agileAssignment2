@@ -475,7 +475,7 @@ router.totalCost = (req, res) => {
         // return a suitable error message
         else
         {
-            res.json({totalCost : getTotalCost(cargo)})
+            res.send({totalCost : getTotalCost(cargo)})
         }
     });
 }
