@@ -3,7 +3,7 @@ let router = express.Router();
 let mongoose = require('mongoose');
 let Provider = require('../Models/provider');
 
-mongoose.connect('mongodb://localhost:27017/Cargo');
+mongoose.connect('mongodb://localhost:27017/Cargo',{ useNewUrlParser: true });
 
 
 /**

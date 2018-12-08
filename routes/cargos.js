@@ -4,7 +4,7 @@ let router = express.Router();
 let mongoose = require('mongoose');
 let Cargo1 = require('../Models/cargos');
 
-mongoose.connect('mongodb://localhost:27017/Cargo');
+mongoose.connect('mongodb://localhost:27017/Cargo',{ useNewUrlParser: true });
 
 let db = mongoose.connection;
 
