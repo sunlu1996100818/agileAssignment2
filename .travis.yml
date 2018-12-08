@@ -1,4 +1,12 @@
-    dist: trusty
-    language: node_js
-    node_js:
-    - stable
+dist: trusty
+language: node_js
+node_js:
+- stable
+branches:
+  only: development
+notifications:
+  email:
+    recipients:
+    - 996844107@qq.com     # change to your own address
+    on_success: never        # default: change
+    on_failure: always       # default: always
