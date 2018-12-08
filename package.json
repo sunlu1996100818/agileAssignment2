@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "mocha test/cargo-test.js"
+    "test": "mocha test/cargo-test.js",
+    "coverage": "mocha test/cargo-test.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
@@ -19,9 +20,11 @@
     "pug": "2.0.0-beta11"
   },
   "devDependencies": {
+    "babel-plugin-istanbul": "^4.1.5",
     "chai": "^3.5.0",
     "chai-http": "^2.0.1",
     "chai-things": "^0.2.0",
-    "mocha": "^3.4.2"
+    "mocha": "^3.4.2",
+    "nyc": "^13.1.0"
   }
 }
