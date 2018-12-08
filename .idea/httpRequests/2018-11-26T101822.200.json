@@ -1,0 +1,105 @@
+[
+  {
+    "_id": "5bc908a65a6760bc51a7f9aa",
+    "price": 20,
+    "amount": 200,
+    "providerID": "5bc9064d5a6760bc51a7f9a1",
+    "providerName": "John",
+    "providerType": "admin",
+    "cargoName": "John"
+  },
+  {
+    "_id": "5bc908e35a6760bc51a7f9ab",
+    "price": 500,
+    "amount": 44,
+    "providerID": "5bc9066a5a6760bc51a7f9a2",
+    "providerName": "Sam",
+    "providerType": "user",
+    "cargoName": "John"
+  },
+  {
+    "_id": "5bc9091a5a6760bc51a7f9ac",
+    "price": 800,
+    "amount": 200,
+    "providerID": "5bc906805a6760bc51a7f9a3",
+    "providerName": "Sam",
+    "providerType": "user",
+    "cargoName": "John"
+  },
+  {
+    "_id": "5bc909615a6760bc51a7f9ad",
+    "price": 450,
+    "amount": 150,
+    "providerID": "5bc906a35a6760bc51a7f9a4",
+    "providerName": "Sam",
+    "providerType": "user",
+    "cargoName": "John"
+  },
+  {
+    "_id": "5bc9098c5a6760bc51a7f9ae",
+    "price": 500,
+    "amount": 300,
+    "providerID": "5bc906bb5a6760bc51a7f9a5",
+    "providerName": "Bob",
+    "providerType": "user",
+    "cargoName": "John"
+  },
+  {
+    "_id": "5bc909b55a6760bc51a7f9af",
+    "price": 800,
+    "amount": 300,
+    "providerID": "5bc906d85a6760bc51a7f9a6",
+    "providerName": "Bob",
+    "providerType": "user",
+    "cargoName": "John"
+  },
+  {
+    "_id": "5bc909fa5a6760bc51a7f9b0",
+    "price": 900,
+    "amount": 250,
+    "providerID": "5bc906fc5a6760bc51a7f9a7",
+    "providerName": "Tony",
+    "providerType": "admin",
+    "cargoName": "John"
+  },
+  {
+    "_id": "5bd0c547db6de20f0cff568d",
+    "price": 50,
+    "amount": 66,
+    "providerID": "5bc9060f5a6760bc51a7f99f",
+    "providerName": "John",
+    "providerType": "admin",
+    "__v": 0,
+    "cargoName": "John"
+  },
+  {
+    "_id": "5bf9c3481e8a4017c8bddc23",
+    "price": 555,
+    "amount": 50,
+    "providerID": "5bc9060f5a6760bc51a7f99f",
+    "providerName": "John",
+    "providerType": "admin",
+    "__v": 0,
+    "cargoName": "John"
+  },
+  {
+    "_id": "5bfc6b113d4ffe17f4ff3326",
+    "price": 66,
+    "amount": 200,
+    "providerID": "5bc9064d5a6760bc51a7f9a1",
+    "providerName": "John",
+    "providerType": "admin",
+    "__v": 0,
+    "cargoName": "John"
+  },
+  {
+    "_id": "5bfc7061d913b434b0fb6b4e",
+    "price": 55,
+    "amount": 55,
+    "providerID": "5bc9064d5a6760bc51a7f9a1",
+    "providerName": "John",
+    "providerType": "admin",
+    "__v": 0,
+    "cargoName": "John"
+  }
+]

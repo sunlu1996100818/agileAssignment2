@@ -9,13 +9,14 @@ var usersRouter = require('./routes/users');
 const cargo = require("./routes/cargos");
 const provider = require("./routes/provider");
 const user = require("./routes/allUsers");
+var cors = require('cors');
 
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
-
+app.use(cors());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -25,30 +26,31 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-app.get('/cargoAll/:providerName', cargo.findAll);                                                        //p
+app.get('/cargoAll/', cargo.findAll);                                                        //p
 app.get('/provider/providerAll', provider.findAll);                                             //p
 
 app.get('/cargoCompany/:id',cargo.searchCompanyReputationByCargoId);                                        //p   relevance search
 
 
-app.get('/cargoContains/:name/:providerName', cargo.containNames);                                          //p   Fuzzy search
+app.get('/cargoContains/:cargoName/:providerName', cargo.containNames);                                          //p   Fuzzy search
 app.get('/providerCompanyContains/:company', provider.containNames);                            //p   Fuzzy Search
 
-app.get('/cargoName/:name/:providerName', cargo.findByName);                                               //p
-app.get('/cargoId/:id/:providerName', cargo.findById);                                                      //p
+app.get('/cargoName/:cargoName/:providerName', cargo.findByName);                                               //p
+app.get('/cargoId/:id/', cargo.findById);                                                      //p
 
 app.get('/providerName/:name', provider.findByName);                                            //p
 app.get('/provider/:id', provider.findById);                                                    //p
 
-app.get('/cargoTotalCostByName/:name', cargo.totalCost);                                                    //p
+app.get('/cargoTotalCostByName/:cargoName', cargo.totalCost);                                                    //p
 app.get('/cargoCertainCost/:id', cargo.certainCost);                                                          //p
 
 
-app.post('/cargo/:providerName',cargo.addCargo);                                                //p
+app.post('/cargo/',cargo.addCargo);                                                //p
 app.post('/provider/',provider.addProvider);                                                    //p
 
-app.put('/cargoPriceChange/:name/:providerName', cargo.changeCargoPrice);                                   //p
+app.put('/cargoPriceChange/:cargoName/:providerName', cargo.changeCargoPrice);                                   //p
 app.put('/cargoCertainPrice/:id/:providerName', cargo.changeCertainPrice);                                 //p
+app.put('/editCargo/:id', cargo.editCargo);                                 //p
 
 
 //app.put('/cargoAmountChange/:name/:providerName', cargo.changeCargoAmount);
@@ -59,7 +61,7 @@ app.put('/providerCompanyChange/:id',provider.changeCertainCompany);            
 app.put('/providerReputationChange/:id',provider.changeCertainReputation);                    //p
 
 
-app.delete('/cargo/:id/:providerName', cargo.deleteCargoById);                                  //p
+app.delete('/cargo/:id', cargo.deleteCargoById);                                  //p
 app.delete('/provider/:id', provider.deleteProviderById);
 
 

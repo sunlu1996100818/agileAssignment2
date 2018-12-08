@@ -1,307 +1,66 @@
-GET http://localhost:3000/cargoCertainCost/5bc908665a6760bc51a7f9a9
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2018-10-30T084517.200.json
-
-###
-
-GET http://localhost:3000/cargoAll/John
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2018-10-30T084411.200.json
-
-###
-
-GET http://localhost:3000/cargoTotalCostByName/chicken
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2018-10-30T083048.200.json
-
-###
-
-GET http://localhost:3000/cargoTotalCostByName/chicken
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2018-10-30T082459.200.json
-
-###
-
-GET http://localhost:3000/cargoName/aaa/John
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"price":899}
-
-<> 2018-10-30T074253.200.json
-
-###
-
-GET http://localhost:3000/provider/providerALL
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"price":899}
-
-<> 2018-10-25T011326.200.json
-
-###
-
-GET http://localhost:3000/cargoAll/John
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"price":899}
-
-<> 2018-10-25T011220.200.json
-
-###
-
-DELETE http://localhost:3000/cargo/5bd1b24edbd5eb07cc7ab416/John
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"price":899}
-
-<> 2018-10-25T011212.200.json
-
-###
-
-DELETE http://localhost:3000/cargo/5bd1b24edbd5eb07cc7ab416/Sam
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"price":899}
-
-<> 2018-10-25T011206.200.json
-
-###
-
-DELETE http://localhost:3000/cargo/5bd1b24edbd5eb07cc7ab416/Sam
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"price":899}
-
-<> 2018-10-25T011136.200.json
-
-###
-
-GET http://localhost:3000/cargoAll/John
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"price":899}
-
-<> 2018-10-25T011059.200.json
-
-###
-
-PUT http://localhost:3000/cargoCertainPrice/5bc907cd5a6760bc51a7f9a8/John
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"price":899}
-
-<> 2018-10-25T011052.200.json
-
-###
-
-GET http://localhost:3000/cargoAll/John
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"price":666}
-
-<> 2018-10-25T011015.200.json
-
-###
-
-PUT http://localhost:3000/cargoPriceChange/beef/John
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"price":666}
-
-<> 2018-10-25T011008.200.json
-
-###
-
-PUT http://localhost:3000/cargoPriceChange/beef/John
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name":"chicken-wings","price":55,"amount":50,"providerType":"user","providerID":"5bc9060f5a6760bc51a7f99f"}
-
-<> 2018-10-25T010947.200.json
-
-###
-
-POST http://localhost:3000/cargo/John
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name":"chicken-wings","price":55,"amount":50,"providerType":"user","providerID":"5bc9060f5a6760bc51a7f99f"}
-
-<> 2018-10-25T010923.200.json
-
-###
-
-GET http://localhost:3000/cargoAll/John
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name":"chicken-wings","price":55,"amount":50,"providerName":"Sam","providerType":"user","providerID":"5bc9060f5a6760bc51a7f99f"}
-
-<> 2018-10-25T010900.200.json
-
-###
-
-POST http://localhost:3000/cargo/John
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name":"chicken-wings","price":55,"amount":50,"providerName":"Sam","providerType":"user","providerID":"5bc9060f5a6760bc51a7f99f"}
-
-<> 2018-10-25T010846.200.json
-
-###
-
-GET http://localhost:3000/cargoCertainCost/5bc907cd5a6760bc51a7f9a8
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2018-10-25T010809.200.json
-
-###
-
-GET http://localhost:3000/cargoAll/John
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2018-10-25T010754.200.json
-
-###
-
-GET http://localhost:3000/cargoTotalCostByName/chicken
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2018-10-25T010744.200.json
-
-###
-
 GET http://localhost:3000/cargoTotalCostByName/beef
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2018-10-25T010736.200.json
+{"name":"beef","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-12-08T075327.200.json
 
 ###
 
-GET http://localhost:3000/cargoId/asdfas8/John
+GET http://localhost:3000/cargoTotalCostByName/chicken
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2018-10-25T010711.200.json
+{"name":"beef","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-12-08T075322.200.json
 
 ###
 
-GET http://localhost:3000/cargoId/asdfas8/Sam
+GET http://localhost:3000/cargoAll
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2018-10-25T010707.200.json
+{"name":"beef","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-12-08T074041.200.json
 
 ###
 
-GET http://localhost:3000/cargoId/5bc907cd5a6760bc51a7f9a8/Sam
+GET http://localhost:3000/cargoAll
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2018-10-25T010702.200.json
+{"name":"beef","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-12-08T121847.200.json
 
 ###
 
-GET http://localhost:3000/cargoId/5bc907cd5a6760bc51a7f9a8/John
+POST http://localhost:3000/cargo/Tony
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2018-10-25T010653.200.json
+{"name":"beef","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-12-08T121352.200.json
 
 ###
 
-GET http://localhost:3000/cargoName/5bc907cd5a6760bc51a7f9a8/John
+GET http://localhost:3000/cargoAll/Tony
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2018-10-25T010648.200.json
+{"name":"beef","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
 
-###
-
-GET http://localhost:3000/cargoName/beef/John
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2018-10-25T010637.200.json
-
-###
-
-GET http://localhost:3000/cargoName/adfadsf/John
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2018-10-25T010630.200.json
-
-###
-
-GET http://localhost:3000/cargoName/beef/John
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2018-10-25T010620.200.json
-
-###
-
-GET http://localhost:3000/cargoName/beef
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2018-10-25T010617.404.html
+<> 2018-12-08T121243.200.json
 
 ###
 
@@ -310,73 +69,42 @@ Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2018-10-25T010608.200.json
+{"name":"beef","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-12-08T121223.200.json
 
 ###
 
-GET http://localhost:3000/cargoContains/beef/Sam
+GET http://localhost:3000/provider/providerAll
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2018-10-25T010558.200.json
+{"name":"beef","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-12-03T110334.200.json
 
 ###
 
-GET http://localhost:3000/cargoContains/beef/John
+GET http://localhost:3000/cargoCompany/5bfc7a568b43c3609e6d1eee
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2018-10-25T010555.200.json
+{"name":"beef","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-12-03T104626.200.json
 
 ###
 
-GET http://localhost:3000/cargoContains/asdfa/John
+GET http://localhost:3000/cargoCompany
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2018-10-25T010548.200.json
+{"name":"beef","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
 
-###
-
-GET http://localhost:3000/cargoContains/asdfa/John
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-###
-
-GET http://localhost:3000/cargoContains/asdfa/John
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-###
-
-GET http://localhost:3000/cargoContains/asdfa/John
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-###
-
-GET http://localhost:3000/cargoContains/ap/John
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2018-10-25T010526.200.json
-
-###
-
-GET http://localhost:3000/cargoContains/beef/John
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2018-10-25T010511.200.json
+<> 2018-12-03T104622.404.html
 
 ###
 
@@ -385,34 +113,9 @@ Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2018-10-25T010442.200.json
+{"name":"beef","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
 
-###
-
-GET http://localhost:3000/cargoCompany/asdfasdf
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2018-10-25T010425.200.json
-
-###
-
-GET http://localhost:3000/cargoCompany/5bc908665a6760bc51a7f9a9
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2018-10-25T010408.200.json
-
-###
-
-GET http://localhost:3000/cargoCompany/5bc907cd5a6760bc51a7f9a8
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2018-10-25T010326.200.json
+<> 2018-12-03T104558.200.json
 
 ###
 
@@ -421,34 +124,31 @@ Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2018-10-25T010311.200.json
+{"name":"beef","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-26T112939.200.json
 
 ###
 
-GET http://localhost:3000/cargoAll/SDfasdfasdf
+POST http://localhost:3000/cargo/John
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2018-10-25T010305.200.json
+{"name":"beef","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-26T112930.200.json
 
 ###
 
-GET http://localhost:3000/cargoAll/Sam
+POST http://localhost:3000/cargo/John
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-<> 2018-10-25T010253.200.json
+{"name":"beef","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
 
-###
-
-GET http://localhost:3000/cargoAll/John
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2018-10-25T010235.200.json
+<> 2018-11-26T112900.200.json
 
 ###
 
@@ -457,20 +157,394 @@ Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"paymenttype":"PayPal", "amount" :1101 ,"upvotes":0 }
+{"name":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
 
-<> 2018-10-25T125524.200.json
+<> 2018-11-26T112740.200.json
 
 ###
 
-GET http://localhost:3000/cargoCompany/5bc907cd5a6760bc51a7f9a8
+GET http://localhost:3000/cargoAll/John
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"paymenttype":"PayPal", "amount" :1101 ,"upvotes":0 }
+{"name":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
 
-<> 2018-10-25T125513.200.json
+<> 2018-11-26T112725.200.json
+
+###
+
+POST http://localhost:3000/cargoAll/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-26T112720.404.html
+
+###
+
+POST http://localhost:3000/cargo/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-26T112554.200.json
+
+###
+
+POST http://localhost:3000/cargo/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-26T112521.404.html
+
+###
+
+POST http://localhost:3000/cargo/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-26T112455.404.html
+
+###
+
+POST http://localhost:3000/cargo/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-26T112444.200.json
+
+###
+
+GET http://localhost:3000/cargoAll/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"cargoName":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-26T111844.200.json
+
+###
+
+POST http://localhost:3000/cargo/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"cargoName":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-26T105955.200.json
+
+###
+
+GET http://localhost:3000/cargoAll/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-26T105838.200.json
+
+###
+
+POST http://localhost:3000/cargo/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-26T105823.200.json
+
+###
+
+GET http://localhost:3000/cargoTotalCostByName/beef-fillet
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"cargoName":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-26T105440.200.json
+
+###
+
+GET http://localhost:3000/cargoTotalCostByName/chicken
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"cargoName":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-26T105434.200.json
+
+###
+
+GET http://localhost:3000/cargoAll/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"cargoName":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-26T105401.200.json
+
+###
+
+POST http://localhost:3000/cargo/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"cargoName":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-26T105111.200.json
+
+###
+
+GET http://localhost:3000/cargoAll/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"cargoName":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-26T104805.200.json
+
+###
+
+POST http://localhost:3000/cargo/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"cargoName":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-26T104751.200.json
+
+###
+
+GET http://localhost:3000/cargoName/chicken/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"cargoName":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-26T104452.200.json
+
+###
+
+GET http://localhost:3000/cargoName/beef-fullet/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"cargoName":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-26T104340.200.json
+
+###
+
+GET http://localhost:3000/cargoAll/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"cargoName":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-26T104218.200.json
+
+###
+
+POST http://localhost:3000/cargo/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"cargoName":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-26T104144.200.json
+
+###
+
+GET http://localhost:3000/cargoAll/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"cargoName":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-26T104000.200.json
+
+###
+
+POST http://localhost:3000/cargo/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"cargoName":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-26T103953.200.json
+
+###
+
+GET http://localhost:3000/cargoAll/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-26T103625.200.json
+
+###
+
+GET http://localhost:3000/cargoAll/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-26T103248.200.json
+
+###
+
+GET http://localhost:3000/cargoAll/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-26T101822.200.json
+
+###
+
+GET http://localhost:3000/cargoAll/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-26T081556.200.json
+
+###
+
+POST http://localhost:3000/cargo
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-24T095027.200.json
+
+###
+
+POST http://localhost:3000/cargo
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-24T093152.200.json
+
+###
+
+DELETE http://localhost:3000/cargo/5bf9bd38a92e6916741bc678/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-24T093142.200.json
+
+###
+
+GET http://localhost:3000/cargoAll/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-24T093127.200.json
+
+###
+
+DELETE http://localhost:3000/cargo/5bf9c2b1ec927028d0562fd1/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-24T093119.200.json
+
+###
+
+GET http://localhost:3000/cargoAll/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-24T093101.200.json
+
+###
+
+POST http://localhost:3000/cargo
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-24T092921.200.json
+
+###
+
+GET http://localhost:3000/cargoAll/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-24T090614.200.json
+
+###
+
+POST http://localhost:3000/cargo/John
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
+<> 2018-11-24T090600.200.json
 
 ###
 

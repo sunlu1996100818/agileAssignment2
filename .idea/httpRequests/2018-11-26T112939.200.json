@@ -1,0 +1,51 @@
+[
+  {
+    "_id": "5bfc7a568b43c3609e6d1eee",
+    "name": "chick",
+    "price": 100,
+    "amount": 100,
+    "providerID": "5bc9064d5a6760bc51a7f9a1",
+    "providerName": "John",
+    "providerType": "admin"
+  },
+  {
+    "_id": "5bfc7a8f1510412624e6ccec",
+    "name": "beef-fullet",
+    "price": 555,
+    "amount": 50,
+    "providerID": "5bc9060f5a6760bc51a7f99f",
+    "providerName": "John",
+    "providerType": "admin",
+    "__v": 0
+  },
+  {
+    "_id": "5bfc81022c6ab4350cd92da3",
+    "name": "beef-fullet",
+    "price": 555,
+    "amount": 50,
+    "providerID": "5bc9060f5a6760bc51a7f99f",
+    "providerName": "John",
+    "providerType": "admin",
+    "__v": 0
+  },
+  {
+    "_id": "5bfc81bc2c6ab4350cd92da7",
+    "name": "beef",
+    "price": 555,
+    "amount": 50,
+    "providerID": "5bc9060f5a6760bc51a7f99f",
+    "providerName": "John",
+    "providerType": "admin",
+    "__v": 0
+  },
+  {
+    "_id": "5bfc81da45fad12ae037433a",
+    "name": "beef",
+    "price": 555,
+    "amount": 50,
+    "providerID": "5bc9060f5a6760bc51a7f99f",
+    "providerName": "John",
+    "providerType": "admin",
+    "__v": 0
+  }
+]

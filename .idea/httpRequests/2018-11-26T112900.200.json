@@ -1,0 +1,13 @@
+{
+  "message": "Cargo Added Successfully!",
+  "data": {
+    "_id": "5bfc81bc2c6ab4350cd92da7",
+    "name": "beef",
+    "price": 555,
+    "amount": 50,
+    "providerID": "5bc9060f5a6760bc51a7f99f",
+    "providerName": "John",
+    "providerType": "admin",
+    "__v": 0
+  }
+}

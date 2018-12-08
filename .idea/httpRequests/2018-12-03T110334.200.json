@@ -1,0 +1,73 @@
+[
+  {
+    "_id": "5bc9060f5a6760bc51a7f99f",
+    "name": "John",
+    "cargoProvide": "beef",
+    "company": "beef king",
+    "providerReputation": 9
+  },
+  {
+    "_id": "5bc9062c5a6760bc51a7f9a0",
+    "name": "John",
+    "cargoProvide": "chicken",
+    "company": "chicken king",
+    "providerReputation": 8
+  },
+  {
+    "_id": "5bc9064d5a6760bc51a7f9a1",
+    "name": "John",
+    "cargoProvide": "apple",
+    "company": "Best Fruits",
+    "providerReputation": 9
+  },
+  {
+    "_id": "5bc9066a5a6760bc51a7f9a2",
+    "name": "Sam",
+    "cargoProvide": "beef",
+    "company": "What a beef",
+    "providerReputation": 10
+  },
+  {
+    "_id": "5bc906805a6760bc51a7f9a3",
+    "name": "Sam",
+    "cargoProvide": "beef-tongue",
+    "company": "Super beef",
+    "providerReputation": 5
+  },
+  {
+    "_id": "5bc906a35a6760bc51a7f9a4",
+    "name": "Sam",
+    "cargoProvide": "chicken",
+    "company": "chicken king",
+    "providerReputation": 8
+  },
+  {
+    "_id": "5bc906bb5a6760bc51a7f9a5",
+    "name": "Bob",
+    "cargoProvide": "beef",
+    "company": "Super beef",
+    "providerReputation": 5
+  },
+  {
+    "_id": "5bc906d85a6760bc51a7f9a6",
+    "name": "Bob",
+    "cargoProvide": "chicken",
+    "company": "chicken king",
+    "providerReputation": 8
+  },
+  {
+    "_id": "5bc906fc5a6760bc51a7f9a7",
+    "name": "Tony",
+    "cargoProvide": "fish",
+    "company": "water things",
+    "providerReputation": 9
+  },
+  {
+    "_id": "5bd0ce8fc7222d1d7c0c4122",
+    "name": "Sam",
+    "cargoProvide": "chicken-wings",
+    "company": "adsf",
+    "providerReputation": 5,
+    "__v": 0
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "_id": "5bfc74858b43c3609e6d1eed",
+    "cargoName": "chicken",
+    "price": 50,
+    "amount": 50,
+    "providerID": "5bc9064d5a6760bc51a7f9a1",
+    "providerName": "John",
+    "providerType": "admin"
+  }
+]

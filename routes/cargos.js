@@ -19,7 +19,20 @@ db.on('open', function () {
 /**
  * find all cargoes in database
  */
+router.findAll = (req, res) => {
+    res.setHeader('Content-Type', 'application/json');
 
+            Cargo1.find(function (err,cargo1234) {
+                if (err)
+                    res.send(err);
+                //res.send(JSON.stringify(cargo1234,null,5));
+                res.json(cargo1234);
+            })
+
+    };
+
+
+/*
 router.findAll = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
     Cargo1.find({ providerName: req.params.providerName },function(err, cargos123) {
@@ -32,7 +45,8 @@ router.findAll = (req, res) => {
             Cargo1.find(function (err,cargo1234) {
                 if (err)
                     res.send(err);
-                res.send(JSON.stringify(cargo1234,null,5));
+                //res.send(JSON.stringify(cargo1234,null,5));
+                res.json(cargo1234);
             })
         }
         else {
@@ -40,7 +54,7 @@ router.findAll = (req, res) => {
         }
     });
 
-}
+}*/
 
 
 /**
@@ -49,13 +63,7 @@ router.findAll = (req, res) => {
 
 router.findById = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
-    Cargo1.find({ providerName: req.params.providerName },function(err, cargos123) {
-        if (err){
-            res.send("Error!!!");
-        }else if(cargos123.length<=0){
-            res.json("Invalid provider name");
-        }
-        else if((cargos123[0].providerType==="admin")){
+
             Cargo1.find({ "_id" : req.params.id },function(err, cargos111) {
                 if (err){
                     res.send("invalid ID");
@@ -66,14 +74,10 @@ router.findById = (req, res) => {
                 }
                 else {
                     console.log(cargos111);
-                    res.send(JSON.stringify(cargos111,null,5));
+                    res.json(cargos111);
                 }
             });
-        }
-        else {
-            res.json('your authority is not Enough! You cant see all cargos!');
-        }
-    });
+
 
     /*Cargo1.find({ "_id":req.params.id, "providerName" : req.params.providerName},function (err, cargos111) {
         if (err||(cargos111.length<=0)){
@@ -104,10 +108,11 @@ router.searchCompanyReputationByCargoId =(req,res) => {
 
         }
         else if(cargo.length<=0){
-            res.send(JSON.stringify("invalid ID",null,5));
+            //res.send(JSON.stringify("invalid ID",null,5));
+            res.json("invalid ID");
         }
         else {
-            res.send(cargo.providerID.company+'       '+cargo.providerID.providerReputation);
+            res.json(cargo.providerID.company+cargo.providerID.providerReputation);
         }
     })
 }
@@ -139,7 +144,8 @@ router.findByName = (req, res) => {
                 }
                 else {
                     console.log(cargos111);
-                    res.send(JSON.stringify(cargos111,null,5));
+                    //res.send(JSON.stringify(cargos111,null,5));
+                    res.json(cargos111);
                 }
             });
         }
@@ -181,7 +187,8 @@ router.containNames = (req, res) =>{
                 res.send("invalid provider name! ")
         }
         else if ((cargos111[0].providerType==="admin")) {
-            res.send(JSON.stringify(result,null,5));
+            //res.send(JSON.stringify(result,null,5));
+            res.json(result);
         }
         else {
             //res.send(JSON.stringify(cargos111,null,5));
@@ -201,14 +208,7 @@ router.addCargo = (req, res) => {
 
     res.setHeader('Content-Type', 'application/json');
 
-    Cargo1.find({ providerName: req.params.providerName },function(err, cargos123) {
-        if (err){
-            res.send("Error!!!");
-        }
-        else if(cargos123.length<=0){
-            res.send("Invalid provider name!")
-        }
-        else if(cargos123[0].providerType==="admin"){
+
             var cargoss = new Cargo1();
 
             cargoss.name =  req.body.name;
@@ -229,7 +229,7 @@ router.addCargo = (req, res) => {
                     // return a suitable error message
                     else{
 
-                        res.json({ message: 'Cargo Added Successfully!'});
+                        res.json(cargoss);
                         //res.json({ message: 'Cargo Added Successfully!',data:cargoss});
                     }
                     // return a suitable success message
@@ -238,14 +238,38 @@ router.addCargo = (req, res) => {
             else {
                 res.json('you did not enter the right properties, please check');
             }
-        }
-        else {
-            res.json('your authority is not Enough! You cant add new cargos!');
-        }
-    });
+
 
 
 }
+/*
+router.addCargo = (req, res) => {
+
+    res.setHeader('Content-Type', 'application/json');
+
+    var cargo1 = new Cargo1();
+
+    cargo1.name =  req.body.name;
+    cargo1.price =  req.body.price;
+    cargo1.amount =  req.body.amount;
+    cargo1.providerID = req.body.providerID;
+    cargo1.providerName = req.body.providerName;
+    cargo1.providerType = req.body.providerType;
+
+            cargo1.save(function(err) {
+                if (err){
+                    res.json({ message: 'cargo NOT Added!'});
+                }
+                // return a suitable error message
+                else{
+                    console.log(typeof(cargo1));
+                    res.json({ message: 'Cargo Added Successfully!',data:cargo1});
+                }
+                // return a suitable success message
+            });
+};
+*/
+
 
 
 
@@ -253,31 +277,17 @@ router.addCargo = (req, res) => {
  * delete cargo by its id;
  */
 router.deleteCargoById = (req, res) => {
-    Cargo1.find({ providerName: req.params.providerName },function(err, cargos123) {
-        if (err){
-            res.send("Error!!!");
-        }
-        else if(cargos123.length<=0){
-            res.send("Invalid provider name!")
-        }
-        else if(cargos123[0].providerType==="admin"){
+
             Cargo1.findByIdAndRemove(req.params.id, function(err) {
                 if (err){
                     res.json({ message: 'Cant find cargo, cargo NOT Deleted!'});
-                }
-                else if(cargos123.length<=0){
-                    res.json("Invalid ID!!! cargo not deleted!");
                 }
                 // return a suitable error message
                 else{
                     res.json({ message: 'cargo Deleted successfully!'});
                 }
             });
-        }
-        else {
-            res.json('your authority is not Enough! You cant delete the cargo!');
-        }
-    });
+
 
 }
 
@@ -363,6 +373,28 @@ router.changeCertainPrice =(req,res) => {
     });
 
 };
+
+
+router.editCargo =(req,res) => {
+    res.setHeader('Content-Type', 'application/json');
+    var conditions = { _id: req.params.id } ,
+        update = {  price: req.body.price, amount: req.body.amount,name:req.body.name};
+    var query = { _id: req.params.id };
+    Cargo1.updateMany(query, update,function (err, cargo) {
+        //console.log(allCargos);
+        if (err){
+            res.json('cargo NOT Found - cant change the price');
+        }
+        else if(cargo.length<=0){
+            res.json("Invalid ID!!")
+        }
+        else {
+            res.json('your change request is successful, please check');
+        }
+    })
+};
+
+
 
 router.changeCargoAmount =(req,res) => {
     res.setHeader('Content-Type', 'application/json');

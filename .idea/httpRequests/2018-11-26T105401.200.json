@@ -1,0 +1,47 @@
+[
+  {
+    "_id": "5bfc74858b43c3609e6d1eed",
+    "cargoName": "chicken",
+    "price": 50,
+    "amount": 50,
+    "providerID": "5bc9064d5a6760bc51a7f9a1",
+    "providerName": "John",
+    "providerType": "admin"
+  },
+  {
+    "_id": "5bfc76393b5b771bfcd832bc",
+    "price": 555,
+    "amount": 50,
+    "providerID": "5bc9060f5a6760bc51a7f99f",
+    "providerName": "John",
+    "providerType": "admin",
+    "__v": 0
+  },
+  {
+    "_id": "5bfc76a83b5b771bfcd832bd",
+    "price": 555,
+    "amount": 50,
+    "providerID": "5bc9060f5a6760bc51a7f99f",
+    "providerName": "John",
+    "providerType": "admin",
+    "__v": 0
+  },
+  {
+    "_id": "5bfc78171c9641074c2e3ce2",
+    "price": 555,
+    "amount": 50,
+    "providerID": "5bc9060f5a6760bc51a7f99f",
+    "providerName": "John",
+    "providerType": "admin",
+    "__v": 0
+  },
+  {
+    "_id": "5bfc78dfc3a1bd363c8db61c",
+    "price": 555,
+    "amount": 50,
+    "providerID": "5bc9060f5a6760bc51a7f99f",
+    "providerName": "John",
+    "providerType": "admin",
+    "__v": 0
+  }
+]

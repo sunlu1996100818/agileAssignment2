@@ -1,0 +1,10 @@
+{
+  "_id": "5bf9c3481e8a4017c8bddc23",
+  "name": "beef-fullet",
+  "price": 555,
+  "amount": 50,
+  "providerID": "5bc9060f5a6760bc51a7f99f",
+  "providerName": "John",
+  "providerType": "admin",
+  "__v": 0
+}
