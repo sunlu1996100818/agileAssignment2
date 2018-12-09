@@ -1,0 +1,112 @@
+[
+  {
+    "_id": "5c01adc8d2b264205471da77",
+    "name": "beef",
+    "price": 200,
+    "amount": 200,
+    "providerID": "5bc9066a5a6760bc51a7f9a2",
+    "providerName": "Sam",
+    "providerType": "user",
+    "__v": 0
+  },
+  {
+    "_id": "5c01adead2b264205471da78",
+    "name": "beef-tongue",
+    "price": 500,
+    "amount": 250,
+    "providerID": "5bc906805a6760bc51a7f9a3",
+    "providerName": "Sam",
+    "providerType": "beef-tongue",
+    "__v": 0
+  },
+  {
+    "_id": "5c01ae0dd2b264205471da79",
+    "name": "chicken",
+    "price": 666,
+    "amount": 888,
+    "providerID": "5bc906a35a6760bc51a7f9a4",
+    "providerName": "Sam",
+    "providerType": "user",
+    "__v": 0
+  },
+  {
+    "_id": "5c01ae34d2b264205471da7a",
+    "name": "fish",
+    "price": 999,
+    "amount": 500,
+    "providerID": "5bc906fc5a6760bc51a7f9a7",
+    "providerName": "Tony",
+    "providerType": "admin",
+    "__v": 0
+  },
+  {
+    "_id": "5c01ae55d2b264205471da7b",
+    "name": "beef",
+    "price": 666,
+    "amount": 444,
+    "providerID": "5bc906bb5a6760bc51a7f9a5",
+    "providerName": "Bob",
+    "providerType": "user",
+    "__v": 0
+  },
+  {
+    "_id": "5c01afabd2b264205471da7d",
+    "name": "chicken-wing",
+    "price": 888,
+    "amount": 999,
+    "providerID": "5bd0ce8fc7222d1d7c0c4122",
+    "providerName": "Sam",
+    "providerType": "user",
+    "__v": 0
+  },
+  {
+    "_id": "5c0b0cc0f493bd0e6cfd7cae",
+    "name": "beef",
+    "price": 555,
+    "amount": 50,
+    "providerID": "5bc9060f5a6760bc51a7f99f",
+    "providerName": "John",
+    "providerType": "admin",
+    "__v": 0
+  },
+  {
+    "_id": "5c0b0d0af493bd0e6cfd7caf",
+    "name": "apple",
+    "price": 222,
+    "amount": 333,
+    "providerID": "5bc9064d5a6760bc51a7f9a1",
+    "providerName": "John",
+    "providerType": "admin",
+    "__v": 0
+  },
+  {
+    "_id": "5c0b0d17f493bd0e6cfd7cb0",
+    "name": "chicken",
+    "price": 666,
+    "amount": 999,
+    "providerID": "5bc9062c5a6760bc51a7f9a0",
+    "providerName": "John",
+    "providerType": "admin",
+    "__v": 0
+  },
+  {
+    "_id": "5c0b0d2df493bd0e6cfd7cb1",
+    "name": "chicken-breast",
+    "price": 888,
+    "amount": 697,
+    "providerID": "5bc9062c5a6760bc51a7f9a0",
+    "providerName": "John",
+    "providerType": "admin",
+    "__v": 0
+  },
+  {
+    "_id": "5c0c4b0d9cbf161d049f21be",
+    "name": "beef",
+    "price": 55,
+    "amount": 50,
+    "providerID": "5bc9060f5a6760bc51a7f99f",
+    "providerName": "John",
+    "providerType": "admin",
+    "__v": 0
+  }
+]

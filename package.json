@@ -6,7 +6,8 @@
     "start": "node ./bin/www",
     "test": "set NODE_ENV=test && mocha test/cargo-test.js",
     "publish-coverage": "nyc report --reporter=text-lcov | coveralls",
-    "coverage": "mocha test/cargo-test.js"
+    "coverage": "mocha test/cargo-test.js",
+    "build": "babel ./ --out-dir lib/ --ignore ./node_modules,./.babelrc,./package.json,./package-lock.json,./test --copy-files"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
@@ -21,7 +22,10 @@
     "pug": "2.0.0-beta11"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
     "babel-plugin-istanbul": "^4.1.5",
+    "babel-preset-es2015": "^6.24.1",
     "chai": "^3.5.0",
     "chai-http": "^2.0.1",
     "chai-things": "^0.2.0",

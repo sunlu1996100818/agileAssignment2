@@ -5,6 +5,17 @@ Content-Type: application/json
 
 {"name":"beef","price":55,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
 
+<> 2018-12-08T115830.200.json
+
+###
+
+GET http://localhost:3000/cargoAll/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name":"beef","price":55,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
+
 <> 2018-12-08T110732.200.json
 
 ###
@@ -534,17 +545,6 @@ Content-Type: application/json
 {"name":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
 
 <> 2018-11-24T093152.200.json
-
-###
-
-DELETE http://localhost:3000/cargo/5bf9bd38a92e6916741bc678/John
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name":"beef-fullet","price":555,"amount":50,"providerName":"John","providerID":"5bc9060f5a6760bc51a7f99f","providerType":"admin"}
-
-<> 2018-11-24T093142.200.json
 
 ###
 
