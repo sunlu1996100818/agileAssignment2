@@ -7,7 +7,11 @@
     "test": "set NODE_ENV=test && mocha test/cargo-test.js",
     "publish-coverage": "nyc report --reporter=text-lcov | coveralls",
     "coverage": "mocha test/cargo-test.js",
-    "clean": "rimraf ./lib && mkdir lib"
+    "clean": "rimraf ./lib && mkdir lib",
+    "server:watch": "cross-env NODE_ENV=dev nodemon --exec babel-node bin/www",
+    "test:watch": "npm run test -- --watch",
+    "lint": "esw  ./test ./routes ./models/ app.js",
+    "lint:watch": "npm run lint -- --watch"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
@@ -27,7 +31,9 @@
     "chai-http": "^2.0.1",
     "chai-things": "^0.2.0",
     "coveralls": "^2.13.1",
+    "eslint-watch": "^4.0.2",
     "mocha": "^3.4.2",
+    "nodemon": "^1.18.7",
     "nyc": "^13.1.0"
   }
 }
